@@ -1,0 +1,106 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+.responsive {
+	padding: 0 6px;
+	float: left;
+	width: 24.99999%;
+	margin-bottom:50px ;
+	position: relative;
+}
+
+/*body{*/
+	/*!*background: #dedede;*!*/
+	/*font-family: 'Helvetica', arial, sans-serif;*/
+
+	/*font-size: 15px;*/
+/*}*/
+
+.container{
+	/*margin: 20px auto;*/
+	/*background: #fff;*/
+	overflow: hidden;
+	/*padding: 10px;*/
+}
+
+
+.header{
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+/* Main */
+
+	.middle{
+		width: 100%;
+		/*padding: 10px;*/
+		/*margin: 10px;*/
+	}
+		.middle img{
+			max-width: 100%;
+			height: auto;
+		}
+
+		.middle a{
+			font-weight: bold;
+		}
+
+.footer{
+	clear: both;
+	border: 1px solid #dedede;
+	padding: 10px;
+	margin: 10px;
+}
+
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* untuk ukuran 1080px kebawah */
+@media screen and (max-width: 1080px) {
+	
+	.container {
+		width: 100%;
+	}
+	.middle {
+		width: 100%;
+		float: right;
+	}
+	.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 33.3333%;
+		margin-bottom:50px ;
+		position: relative;
+	}
+}
+
+
+/* untuk ukuran layar 700px kebawah */
+@media screen and (max-width: 780px) {
+	
+	.header, 
+	.footer{
+		text-align: center;
+	}
+	
+	.middle {
+		width: auto;
+		float: none;
+	}
+	.responsive {
+		padding: 0 6px;
+		float: left;
+		width: 49.99999%;
+		margin-bottom:50px ;
+		position: relative;
+	}
+}
+
+
